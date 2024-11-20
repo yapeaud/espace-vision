@@ -1,0 +1,118 @@
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+.hover-move {
+    transition: transform 0.3s ease-in-out;
+}
+
+.hover-move:hover {
+    transform: translateX(10px);
+}
+
+/*Carousel*/
+/* Animation for text appearing from the bottom */
+.animate-bottom {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: bottom-to-top 2s ease-out forwards;
+}
+
+@keyframes bottom-to-top {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation for buttons appearing from the top */
+.animate-top {
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: top-to-bottom 2s ease-out forwards;
+}
+
+@keyframes top-to-bottom {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsiveness for layout */
+.carousel-text {
+    max-width: 100%;
+    order: 2;
+}
+
+.carousel-image {
+    max-width: 100%;
+    order: 1;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .carousel-text {
+        max-width: 50%;
+        order: 1;
+    }
+
+    .carousel-image {
+        max-width: 50%;
+        order: 2;
+    }
+}
+
+.carousel-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/*BrandsBanner*/
+
+.brands-banner-container {
+    background-color: #fff;
+    /* Optionnel, ajustez selon votre design */
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+}
+
+.marquee-content {
+    display: flex;
+    animation: marquee 15s linear infinite;
+}
+
+.marquee-item {
+    display: inline-block;
+    margin: 0 20px;
+    text-align: center;
+}
+
+/* Animation */
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
