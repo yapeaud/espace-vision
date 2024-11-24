@@ -5,7 +5,7 @@ export const productsBanner = [
         id: 1,
         title: "Lunettes de vue",
         imgAlt: "Lunettes de vue classiques marron foncé",
-        imgSrc: "/src/assets/img/lunette1.avif",
+        imgSrc: "../assets/img/lunette1.avif",
         description: "Monture carrée, marron foncé, avec verres transparents.",
     },
     {
