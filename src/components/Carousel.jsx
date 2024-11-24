@@ -1,4 +1,7 @@
-
+/* eslint-disable react/no-unescaped-entities */
+import caro1 from '../assets/img/caro1.jpg'
+import caro2 from '../assets/img/caro2.jpg'
+import caro3 from '../assets/img/caro3.jpg'
 
 const Carousel = () => {
     return (
@@ -9,9 +12,9 @@ const Carousel = () => {
                     <div className="carousel-item active">
                         <div className="d-flex flex-column flex-md-row align-items-center justify-content-between">
                             <div className="carousel-text text-left p-5">
-                                <h2 className="animate-bottom">Titre Slide 1</h2>
+                                {/* <h2 className="animate-bottom">Titre Slide 1</h2>*/}
                                 <p className="animate-bottom">
-                                    Description de la première slide avec un texte qui se révèle du bas vers le haut.
+                                    Choisissez l'excellence pour vos achats avec notre cabinet !
                                 </p>
                                 {/*<div className="animate-top">
                                     <button className="btn btn-primary me-2">Action 1</button>
@@ -20,7 +23,7 @@ const Carousel = () => {
                             </div>
                             <div className="carousel-image">
                                 <img
-                                    src="https://via.placeholder.com/600x400" // Remplace par ton URL d'image
+                                    src={caro1} 
                                     alt="Slide 1"
                                     className="img-fluid rounded"
                                 />
@@ -32,9 +35,9 @@ const Carousel = () => {
                     <div className="carousel-item">
                         <div className="d-flex flex-column flex-md-row align-items-center justify-content-between">
                             <div className="carousel-text text-left p-5">
-                                <h2 className="animate-bottom">Titre Slide 2</h2>
+                                {/*<h2 className="animate-bottom">Titre Slide 2</h2>*/}
                                 <p className="animate-bottom">
-                                    Description de la deuxième slide avec un texte dynamique.
+                                    Voyez mieux, soyez remarqué ! Faites confiance à Espace Vision.
                                 </p>
                                 {/*<div className="animate-top">
                                     <button className="btn btn-primary me-2">Action 1</button>
@@ -43,7 +46,7 @@ const Carousel = () => {
                             </div>
                             <div className="carousel-image">
                                 <img
-                                    src="https://via.placeholder.com/600x400" // Remplace par ton URL d'image
+                                    src={caro2} // Remplace par ton URL d'image
                                     alt="Slide 2"
                                     className="img-fluid rounded"
                                 />
@@ -55,9 +58,9 @@ const Carousel = () => {
                     <div className="carousel-item">
                         <div className="d-flex flex-column flex-md-row align-items-center justify-content-between">
                             <div className="carousel-text text-left p-5">
-                                <h2 className="animate-bottom">Titre Slide 3</h2>
+                                {/* <h2 className="animate-bottom">Titre Slide 3</h2>*/}
                                 <p className="animate-bottom">
-                                    Description de la troisième slide avec un effet élégant.
+                                    Nous avons tout ce qu’il faut pour répondre à vos besoins et réaliser vos envies !
                                 </p>
                                 {/*<div className="animate-top">
                                     <button className="btn btn-primary me-2">Action 1</button>
@@ -66,7 +69,7 @@ const Carousel = () => {
                             </div>
                             <div className="carousel-image">
                                 <img
-                                    src="https://via.placeholder.com/600x400" // Remplace par ton URL d'image
+                                    src={caro3} // Remplace par ton URL d'image
                                     alt="Slide 3"
                                     className="img-fluid rounded"
                                 />

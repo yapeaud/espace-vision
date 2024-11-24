@@ -1,4 +1,5 @@
-import { teamMembers } from "../constants"
+/* eslint-disable react/no-unescaped-entities */
+//import { teamMembers } from "../constants"
 
 const AboutContent = () => {
     return (
@@ -26,7 +27,7 @@ const AboutContent = () => {
             {/* Team Section */}
             <section className="mb-5">
                 <h2>Notre Équipe</h2>
-                <div className="row">
+                {/* <div className="row">
                     {teamMembers.map((member, index) => (
                         <div className="col-sm-12 col-md-6 col-lg-4 mb-4" key={index}>
                             <div className="card h-100">
@@ -46,7 +47,11 @@ const AboutContent = () => {
                             </div>
                         </div>
                     ))}
-                </div>
+                </div>*/}
+                <p>
+                    Chez Espace Vision, nous sommes dédiés à vous proposer des produits d’excellence et un service sur-mesure pour répondre à tous vos besoins visuels.
+                    Notre équipe, composée d'opticiens diplômés, vous accueille chaleureusement pour vous faire découvrir l’univers de l’optique et de la lunetterie. Dans une ambiance conviviale, nos experts se tiennent à votre disposition pour vous conseiller et vous accompagner dans le choix des montures qui vous correspondent.
+                    Nous sélectionnons soigneusement les plus belles lunettes issues de collections de marques renommées et mettons à votre service notre expertise unique pour sublimer votre regard.</p>
             </section>
 
             {/* Expertise Section */}
@@ -66,7 +71,7 @@ const AboutContent = () => {
 
             {/* Why Choose Us */}
             <section>
-                <h2>Pourquoi Choisir [Nom de l’Officine] ?</h2>
+                <h2>Pourquoi Choisir Espace Vision ?</h2>
                 <p>
                     En nous choisissant, vous optez pour une expertise technique combinée à une approche humaine et
                     écoresponsable. Nous sommes là pour vous accompagner à chaque étape, de votre première consultation à

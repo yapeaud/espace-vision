@@ -1,4 +1,4 @@
-/* eslint-disable react/no-unescaped-entities */
+
 
 import { useState } from "react"
 import { products } from "../constants"
@@ -71,7 +71,8 @@ const ProductsContent = () => {
                             <option value="Ray-Ban">Ray-Ban</option>
                             <option value="Oakley">Oakley</option>
                             <option value="Gucci">Gucci</option>
-                            <option value="Prada">Prada</option>
+                            <option value="Chloé">Chloé</option>
+                            <option value="Tom Ford">Tom Ford</option>
                         </select>
                     </div>
 
@@ -104,16 +105,12 @@ const ProductsContent = () => {
                                 src={product.image}
                                 alt={product.name}
                                 className="card-img-top"
-                                style={{ height: "250px", objectFit: "cover" }}
+                                style={{ height: "100px", objectFit: "cover" }}
                             />
                             <div className="card-body">
                                 <h5 className="card-title">{product.name}</h5>
-                                <p className="card-text">{product.description}</p>
-                                <p>
-                                    <strong>Prix : {product.price.toFixed(2)}€</strong>
-                                </p>
-                                {product.promo && <span className="badge bg-danger">Promotion</span>}
-                            </div>
+                                <p className="card-text invisible">{product.description}</p>
+                            </div> 
                         </div>
                     </div>
                 ))}

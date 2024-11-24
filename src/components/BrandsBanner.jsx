@@ -16,7 +16,7 @@ const BrandsBanner = () => {
                                     className="img-fluid"
                                     style={{ maxHeight: "80px", objectFit: "contain" }}
                                 />
-                                <p className="fw-light text-center">{brand.name}</p>
+                                <p className="fw-light text-center invisible">{brand.name}</p>
                             </div>
                         ))}
                         {/* Répétez les éléments pour un effet continu */}
@@ -28,7 +28,7 @@ const BrandsBanner = () => {
                                     className="img-fluid"
                                     style={{ maxHeight: "80px", objectFit: "contain" }}
                                 />
-                                <p className="fw-light text-center">{brand.name}</p>
+                                <p className="fw-light text-center invisible">{brand.name}</p>
                             </div>
                         ))}
                     </div>
