@@ -48,7 +48,7 @@ const AboutContent = () => {
                         </div>
                     ))}
                 </div>*/}
-                <p>
+                <p> 
                     Chez Espace Vision, nous sommes dédiés à vous proposer des produits d’excellence et un service sur-mesure pour répondre à tous vos besoins visuels.
                     Notre équipe, composée d'opticiens diplômés, vous accueille chaleureusement pour vous faire découvrir l’univers de l’optique et de la lunetterie. Dans une ambiance conviviale, nos experts se tiennent à votre disposition pour vous conseiller et vous accompagner dans le choix des montures qui vous correspondent.
                     Nous sélectionnons soigneusement les plus belles lunettes issues de collections de marques renommées et mettons à votre service notre expertise unique pour sublimer votre regard.</p>

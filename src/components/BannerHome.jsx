@@ -11,8 +11,8 @@ const BannerHome = () => {
                             className="col-sm-6 col-md-3 text-center d-flex flex-column align-items-center"
                         >
                             <img
-                                src={product.imgSrc}
-                                alt={product.imgAlt}
+                                src={product.image}
+                                alt={product.als}
                                 className="img-fluid mb-3"
                                 style={{ maxHeight: "150px", objectFit: "contain" }}
                             />

@@ -11,8 +11,8 @@ const BrandsBanner = () => {
                         {brands.map((brand) => (
                             <div key={brand.id} className="marquee-item">
                                 <img
-                                    src={brand.imgSrc}
-                                    alt={brand.imgAlt}
+                                    src={brand.image}
+                                    alt={brand.alt}
                                     className="img-fluid"
                                     style={{ maxHeight: "80px", objectFit: "contain" }}
                                 />
@@ -23,8 +23,8 @@ const BrandsBanner = () => {
                         {brands.map((brand) => (
                             <div key={`clone-${brand.id}`} className="marquee-item">
                                 <img
-                                    src={brand.imgSrc}
-                                    alt={brand.imgAlt}
+                                    src={brand.image}
+                                    alt={brand.alt}
                                     className="img-fluid"
                                     style={{ maxHeight: "80px", objectFit: "contain" }}
                                 />

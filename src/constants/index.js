@@ -1,32 +1,102 @@
+import {
+    lh1,
+    lh2,
+    lh3,
+    lh4,
+    lh5,
+    lf1,
+    lf2,
+    lf3,
+    lf4,
+    lf5,
+    le1,
+    le2,
+    le3,
+    le4,
+    le5,
+    le6,
+    sm1,
+    sm2,
+    sm3,
+    sf1,
+    sf2,
+    sf3,
+    brand1,
+    brand2,
+    brand3,
+    brand4,
+    brand5,
+    brand6,
+    brand7,
+    brand8,
+    brand9,
+    brand10,
+    //brand11,
+    //brand12,
+    //brand13,
+    //brand14,
+    //brand15,
+    caro1,
+    caro2,
+    caro3,
+    cv,
+    ma,
+    lc,
+    l1,
+    l2,
+    l3
+} from '../assets'
+
+export const caros = [
+    {
+        id: 1,
+        alt: "caro1",
+        image: caro1,
+        text:"Choisissez l'excellence pour vos achats avec notre cabinet !"
+    },
+    {
+        id: 2,
+        alt: "caro2",
+        image: caro2,
+        text:"Voyez mieux, soyez remarqué ! Faites confiance à Espace Vision."
+    },
+    {
+        id: 3,
+        alt: "caro3",
+        image: caro3,
+        text:"Nous avons tout ce qu’il faut pour répondre à vos besoins et réaliser vos envies !"
+    },
+]
+
 
 
 export const productsBanner = [
     {
         id: 1,
         title: "Lunettes de vue",
-        imgAlt: "Lunettes de vue classiques marron foncé",
-        imgSrc: "/src/assets/img/lunette1.avif",
+        alt: "Lunettes de vue classiques marron foncé",
+        image: l1,
         description: "Monture carrée, marron foncé, avec verres transparents.",
     },
     {
         id: 2,
         title: "Lunettes de soleil",
-        imgAlt: "Lunettes de soleil au motif marbré",
-        imgSrc: "/src/assets/img/lunette2.avif",
+        alt: "Lunettes de soleil au motif marbré",
+        image: l2,
         description: "Monture marbrée avec verres dégradés.",
     },
     {
         id: 3,
         title: "Lunettes prémontées",
-        imgAlt: "Lunettes prémontées métalliques dorées",
-        imgSrc: "/src/assets/img/lunette3.avif",
+        alt: "Lunettes prémontées métalliques dorées",
+        image: l3,
         description: "Monture fine, métallique dorée avec détails roses.",
     },
     {
         id: 4,
         title: "Lentilles",
-        imgAlt: "Boîte de lentilles ACUVUE",
-        imgSrc: "/src/assets/img/lentilles.avif",
+        alt: "Boîte de lentilles ACUVUE",
+        image: lc,
         description: "Boîte de lentilles de contact ACUVUE.",
     },
 ];
@@ -35,62 +105,62 @@ export const brands = [
     {
         id: 1,
         name: "Ray.Ban",
-        imgSrc: "/src/assets/img/brand1.svg",
-        imgAlt: "Logo Ray.Ban"
+        image: brand1,
+        alt: "Logo Ray.Ban"
     },
     {
         id: 2,
         name: "Guess",
-        imgSrc: "/src/assets/img/brand2.svg",
-        imgAlt: "Logo Saint Laurent"
+        image: brand2,
+        alt: "Logo Saint Laurent"
     },
     {
         id: 3,
         name: "Chloé",
-        imgSrc: "/src/assets/img/brand3.svg",
-        imgAlt: "Logo Chloé"
+        image: brand3,
+        alt: "Logo Chloé"
     },
     {
         id: 4,
         name: "Tom Ford",
-        imgSrc: "/src/assets/img/brand4.svg",
-        imgAlt: "Logo Tom Ford"
+        image: brand4,
+        alt: "Logo Tom Ford"
     },
     {
         id: 5,
         name: "Oakley",
-        imgSrc: "/src/assets/img/brand5.svg",
-        imgAlt: "Logo Oakley"
+        image: brand5,
+        alt: "Logo Oakley"
     },
     {
         id: 6,
         name: "Polaroid",
-        imgSrc: "/src/assets/img/brand6.svg",
-        imgAlt: "Logo Polaroid"
+        image: brand6,
+        alt: "Logo Polaroid"
     },
     {
         id: 7,
         name: "Persol",
-        imgSrc: "/src/assets/img/brand7.svg",
-        imgAlt: "Logo Persol"
+        image: brand7,
+        alt: "Logo Persol"
     },
     {
         id: 8,
         name: "Carrere",
-        imgSrc: "/src/assets/img/brand8.svg",
-        imgAlt: "Logo Carrera"
+        image: brand8,
+        alt: "Logo Carrera"
     },
     {
         id: 9,
         name: "Vogue",
-        imgSrc: "/src/assets/img/brand9.svg",
-        imgAlt: "Logo "
+        image: brand9,
+        alt: "Logo "
     },
     {
         id: 10,
         name: "Tommy",
-        imgSrc: "/src/assets/img/brand10.svg",
-        imgAlt: "Logo "
+        image: brand10,
+        alt: "Logo "
     },
 ];
 
@@ -115,7 +185,7 @@ export const blocks = [
     },
 ];
 
-export const teamMembers = [
+{/*export const teamMembers = [
     {
         name: "Prénom Nom",
         title: "Opticien(ne) diplômé(e)",
@@ -134,7 +204,7 @@ export const teamMembers = [
         description: "Reconnu(e) pour son œil de designer, harmonisant lunettes et style.",
         image: "/images/img3.jpg",
     },
-];
+];*/}
 
 export const services = [
     {
@@ -149,14 +219,14 @@ export const services = [
             "Tension oculaire",
             "Topographie",
         ],
-        image: "/src/assets/img/cv.jpg",
+        image: cv,
     },
     {
         title: "Montage et Ajustement",
         description:
             "Nous offrons un service sur-mesure pour ajuster vos lunettes et concevoir des verres optiques parfaitement adaptés à vos besoins.",
         details: ["Ajustement des lunettes", "Conception des verres optiques"],
-        image: "/src/assets/img/ma.jpg",
+        image: ma,
     },
 ];
 
@@ -167,7 +237,7 @@ export const products = [
         type: "vue",
         brand: "Ray-Ban",
         gender: "homme",
-        image: "/src/assets/img/lh1.webp",
+        image: lh1,
         description: "Lunettes de vue élégantes et modernes pour un style professionnel.",
     },
     {
@@ -176,7 +246,7 @@ export const products = [
         type: "vue",
         brand: "Gucci",
         gender: "homme",
-        image: "/src/assets/img/lh2.webp",
+        image: lh2,
         description: "Lunettes de vue élégantes et modernes pour un style professionnel.",
     },
     {
@@ -185,7 +255,7 @@ export const products = [
         type: "vue",
         brand: "Tom Ford",
         gender: "homme",
-        image: "/src/assets/img/lh3.webp",
+        image: lh3,
         description: "Lunettes de vue élégantes et modernes pour un style professionnel.",
     },
     {
@@ -194,7 +264,7 @@ export const products = [
         type: "vue",
         brand: "Oakley",
         gender: "homme",
-        image: "/src/assets/img/lh4.webp",
+        image: lh4,
         description: "Lunettes de vue élégantes et modernes pour un style professionnel.",
     },
     {
@@ -203,7 +273,7 @@ export const products = [
         type: "vue",
         brand: "Oakley",
         gender: "homme",
-        image: "/src/assets/img/lh5.webp",
+        image: lh5,
         description: "Lunettes de vue élégantes et modernes pour un style professionnel.",
     },
     {
@@ -212,7 +282,7 @@ export const products = [
         type: "vue",
         brand: "Tom Ford",
         gender: "femme",
-        image: "/src/assets/img/lf1.webp",
+        image: lf1,
         description: "Lunettes de vue élégantes et modernes pour un style professionnel.",
     },
     {
@@ -221,7 +291,7 @@ export const products = [
         type: "vue",
         brand: "Gucci",
         gender: "femme",
-        image: "/src/assets/img/lf2.webp",
+        image: lf2,
         description: "Lunettes de vue élégantes et modernes pour un style professionnel.",
     },
     {
@@ -230,7 +300,7 @@ export const products = [
         type: "vue",
         brand: "Oakley",
         gender: "femme",
-        image: "/src/assets/img/lf3.webp",
+        image: lf3,
         description: "Lunettes de vue élégantes et modernes pour un style professionnel.",
     },
     {
@@ -239,7 +309,7 @@ export const products = [
         type: "vue",
         brand: "Ray-Ban",
         gender: "femme",
-        image: "/src/assets/img/lf4.webp",
+        image: lf4,
         description: "Lunettes de vue élégantes et modernes pour un style professionnel.",
     },
     {
@@ -248,7 +318,7 @@ export const products = [
         type: "vue",
         brand: "Chloé",
         gender: "femme",
-        image: "/src/assets/img/lf5.webp",
+        image: lf5,
         description: "Lunettes de vue élégantes et modernes pour un style professionnel.",
     },
     {
@@ -257,7 +327,7 @@ export const products = [
         type: "vue",
         brand: "Oakley",
         gender: "enfant",
-        image: "/src/assets/img/le1.webp",
+        image: le1,
         description: "Lunettes de vue élégantes et modernes pour un style professionnel.",
     },
     {
@@ -266,7 +336,7 @@ export const products = [
         type: "vue",
         brand: "Chloé",
         gender: "enfant",
-        image: "/src/assets/img/le2.webp",
+        image: le2,
         description: "Lunettes de vue élégantes et modernes pour un style professionnel.",
     },
     {
@@ -275,7 +345,7 @@ export const products = [
         type: "vue",
         brand: "Tom Ford",
         gender: "enfant",
-        image: "/src/assets/img/le3.webp",
+        image: le3,
         description: "Lunettes de vue élégantes et modernes pour un style professionnel.",
     },
     {
@@ -284,7 +354,7 @@ export const products = [
         type: "vue",
         brand: "Ray-Ban",
         gender: "enfant",
-        image: "/src/assets/img/le4.webp",
+        image: le4,
         description: "Lunettes de vue élégantes et modernes pour un style professionnel.",
     },
     {
@@ -293,7 +363,7 @@ export const products = [
         type: "vue",
         brand: "Ray-Ban",
         gender: "enfant",
-        image: "/src/assets/img/le5.webp",
+        image: le5,
         description: "Lunettes de vue élégantes et modernes pour un style professionnel.",
     },
     {
@@ -302,7 +372,7 @@ export const products = [
         type: "vue",
         brand: "Tom Ford",
         gender: "enfant",
-        image: "/src/assets/img/le6.webp",
+        image: le6,
         description: "Lunettes de vue élégantes et modernes pour un style professionnel.",
     },
     {
@@ -311,7 +381,7 @@ export const products = [
         type: "soleil",
         brand: "Gucci",
         gender: "homme",
-        image: "/src/assets/img/sm1.webp",
+        image: sm1,
         description: "Lunettes de vue élégantes et modernes pour un style professionnel.",
     },
     {
@@ -320,7 +390,7 @@ export const products = [
         type: "soleil",
         brand: "Ray-Ban",
         gender: "homme",
-        image: "/src/assets/img/sm2.webp",
+        image: sm2,
         description: "Lunettes de vue élégantes et modernes pour un style professionnel.",
     },
     {
@@ -329,7 +399,7 @@ export const products = [
         type: "soleil",
         brand: "Oakley",
         gender: "homme",
-        image: "/src/assets/img/sm3.webp",
+        image: sm3,
         description: "Lunettes de vue élégantes et modernes pour un style professionnel.",
     },
     {
@@ -338,7 +408,7 @@ export const products = [
         type: "soleil",
         brand: "Ray-Ban",
         gender: "femme",
-        image: "/src/assets/img/sf1.webp",
+        image: sf1,
         description: "Lunettes de vue élégantes et modernes pour un style professionnel.",
     },
     {
@@ -347,7 +417,7 @@ export const products = [
         type: "soleil",
         brand: "Chloé",
         gender: "femme",
-        image: "/src/assets/img/sf2.webp",
+        image: sf2,
         description: "Lunettes de vue élégantes et modernes pour un style professionnel.",
     },
     {
@@ -356,7 +426,7 @@ export const products = [
         type: "soleil",
         brand: "Oakley",
         gender: "femme",
-        image: "/src/assets/img/sf3.webp",
+        image: sf3,
         description: "Lunettes de vue élégantes et modernes pour un style professionnel.",
     },
 ];

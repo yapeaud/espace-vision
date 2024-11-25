@@ -1,81 +1,29 @@
-/* eslint-disable react/no-unescaped-entities */
-import caro1 from '../assets/img/caro1.jpg'
-import caro2 from '../assets/img/caro2.jpg'
-import caro3 from '../assets/img/caro3.jpg'
+import { caros } from "../constants";
 
 const Carousel = () => {
     return (
         <>
             <div id="customCarousel" className="carousel slide pt-5" data-bs-ride="carousel">
                 <div className="carousel-inner">
-                    {/* Slide 1 */}
-                    <div className="carousel-item active">
-                        <div className="d-flex flex-column flex-md-row align-items-center justify-content-between">
-                            <div className="carousel-text text-left p-5">
-                                {/* <h2 className="animate-bottom">Titre Slide 1</h2>*/}
-                                <p className="animate-bottom">
-                                    Choisissez l'excellence pour vos achats avec notre cabinet !
-                                </p>
-                                {/*<div className="animate-top">
-                                    <button className="btn btn-primary me-2">Action 1</button>
-                                    <button className="btn btn-secondary">Action 2</button>
-                                </div>*/}
-                            </div>
-                            <div className="carousel-image">
-                                <img
-                                    src={caro1} 
-                                    alt="Slide 1"
-                                    className="img-fluid rounded"
-                                />
+                    {caros.map((caro, index) => (
+                        <div
+                            key={index}
+                            className={`carousel-item ${index === 0 ? "active" : ""}`}
+                        >
+                            <div className="d-flex flex-column flex-md-row align-items-center justify-content-between">
+                                <div className="carousel-text text-left p-5">
+                                    <p className="animate-bottom">{caro.text}</p>
+                                </div>
+                                <div className="carousel-image">
+                                    <img
+                                        src={caro.image}
+                                        alt={`Slide ${index + 1}`}
+                                        className="img-fluid rounded"
+                                    />
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    {/* Slide 2 */}
-                    <div className="carousel-item">
-                        <div className="d-flex flex-column flex-md-row align-items-center justify-content-between">
-                            <div className="carousel-text text-left p-5">
-                                {/*<h2 className="animate-bottom">Titre Slide 2</h2>*/}
-                                <p className="animate-bottom">
-                                    Voyez mieux, soyez remarqué ! Faites confiance à Espace Vision.
-                                </p>
-                                {/*<div className="animate-top">
-                                    <button className="btn btn-primary me-2">Action 1</button>
-                                    <button className="btn btn-secondary">Action 2</button>
-                                </div>*/}
-                            </div>
-                            <div className="carousel-image">
-                                <img
-                                    src={caro2} // Remplace par ton URL d'image
-                                    alt="Slide 2"
-                                    className="img-fluid rounded"
-                                />
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Slide 3 */}
-                    <div className="carousel-item">
-                        <div className="d-flex flex-column flex-md-row align-items-center justify-content-between">
-                            <div className="carousel-text text-left p-5">
-                                {/* <h2 className="animate-bottom">Titre Slide 3</h2>*/}
-                                <p className="animate-bottom">
-                                    Nous avons tout ce qu’il faut pour répondre à vos besoins et réaliser vos envies !
-                                </p>
-                                {/*<div className="animate-top">
-                                    <button className="btn btn-primary me-2">Action 1</button>
-                                    <button className="btn btn-secondary">Action 2</button>
-                                </div>*/}
-                            </div>
-                            <div className="carousel-image">
-                                <img
-                                    src={caro3} // Remplace par ton URL d'image
-                                    alt="Slide 3"
-                                    className="img-fluid rounded"
-                                />
-                            </div>
-                        </div>
-                    </div>
+                    ))}
                 </div>
 
                 {/* Controls */}
@@ -99,7 +47,7 @@ const Carousel = () => {
                 </button>
             </div>
         </>
-    )
-}
+    );
+};
 
-export default Carousel
+export default Carousel;
