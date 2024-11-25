@@ -150,11 +150,11 @@ const ContactContent = () => {
                 <div className="row">
                     <div className="col-md-6">
                         <h4>Adresse</h4>
-                        <p>123 Rue des Opticiens, 75000 Paris, France</p>
+                        <p>Rue des Jardins, Carrefour Paul (ex PAKO)-Cocody II Plateaux, Abidjan, RCI</p>
                         <h4>Téléphone</h4>
-                        <p><a href="tel:+33123456789">+33 1 23 45 67 89</a></p>
+                        <p><a href="tel:+225 2722410383">+225 27 2241 0383</a></p>
                         <h4>Email</h4>
-                        <p><a href="mailto:contact@officine.fr">contact@officine.fr</a></p>
+                        <p><a href="mailto:espacevision@yahoo.fr">espacevision@yahoo.fr</a></p>
                     </div>
                     <div className="col-md-6">
                         <h4>Horaires d'ouverture</h4>
@@ -174,14 +174,14 @@ const ContactContent = () => {
             <section className="mb-5">
                 <h2>Nous trouver</h2>
                 <div className="ratio ratio-16x9">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.999999!2d2.294481315674494!3d48.85837007928762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fc8e1f53fd7%3A0xbcb1cc1e7c26a2e0!2sTour%20Eiffel!5e0!3m2!1sfr!2sfr!4v1614261709941!5m2!1sfr!2sfr"
-                        width="600"
-                        height="450"
-                        allowFullScreen=""
-                        loading="lazy"
-                        title="Google Maps - Officine"
-                    ></iframe>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1986.1697538417377!2d-3.992453177046088!3d5.365073917219255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1ebe66545af37%3A0x4a2aa47f4d72ebdd!2sESPACE%20VISION%20COTE%20D&#39;IVOIRE!5e0!3m2!1sfr!2sci!4v1732528351234!5m2!1sfr!2sci" 
+                        width="600" 
+                        height="450" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                    >
+                    </iframe>
                 </div>
             </section>
 

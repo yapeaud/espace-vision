@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
@@ -77,9 +76,9 @@ const Footer = () => {
                         <div className="col-md-3">
                             <h5>Nos partenaires</h5>
                             <hr className="bg-white mb-4 mt-0 d-inline-block" style={{ width: '60px', height: '2px' }} />
-                            <div className="input-group">
-                                <p>les assurances seront ici.</p>
-                            </div>
+                            <ul className="list-unstyled">
+                                <li>les assurances seront ici.</li>
+                            </ul>
                         </div>
                     </div>
 
