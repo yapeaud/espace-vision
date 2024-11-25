@@ -12,7 +12,7 @@ const Footer = () => {
                             <h5>À propos</h5>
                             <hr className="bg-white mb-4 mt-0 d-inline-block" style={{ width: '60px', height: '2px' }} />
                             <p>
-                                Lorem ipsum dolor sit am consectetur adipiscing elit do eiusmod tempor incididunt ut labore dolore magna.
+                                La vue est une richesse.
                             </p>
                             <div className="d-flex">
                                 <NavLink to={""} className="text-white me-3">
@@ -61,7 +61,7 @@ const Footer = () => {
                             <h5>Périodes de disponibilité</h5>
                             <hr className="bg-white mb-4 mt-0 d-inline-block" style={{ width: '60px', height: '2px' }} />
                             <p>
-                                Lorem ipsum dolor sit ame consectetur adipiscing elit do eiusmod tempor incididunt.
+                            Voici nos horaires :
                             </p>
                             <ul className="list-unstyled">
                                 {[
@@ -75,21 +75,10 @@ const Footer = () => {
 
                         {/* Newsletter */}
                         <div className="col-md-3">
-                            <h5>Newsletter</h5>
+                            <h5>Nos partenaires</h5>
                             <hr className="bg-white mb-4 mt-0 d-inline-block" style={{ width: '60px', height: '2px' }} />
-                            <p>
-                                Abonnez-vous à notre lettre d'information pour recevoir toutes nos nouvelles dans votre boîte de réception.
-                            </p>
                             <div className="input-group">
-                                <input
-                                    type="email"
-                                    className="form-control bg-primary text-white"
-                                    placeholder="E-mail"
-                                    aria-label="E-mail"
-                                />
-                                <button className="btn btn-light text-primary" type="button">
-                                    <i className="bi bi-send"></i>
-                                </button>
+                                <p>les assurances seront ici.</p>
                             </div>
                         </div>
                     </div>

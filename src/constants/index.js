@@ -68,8 +68,6 @@ export const caros = [
     },
 ]
 
-
-
 export const productsBanner = [
     {
         id: 1,
